@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import { Navbar } from './app/Navbar'
+import {PostsList} from './features/posts/PostsList'
 import Button from './components/Button';
 import Message from './components/Message';
 
@@ -26,16 +27,16 @@ function App() {
             exact
             path="/"
             render={() => (
-              <section>
-                <h2>Welcome to the Redux Essentials example app!</h2>
-              </section>
+              <React.Fragment>
+                <PostsList/>
+              </React.Fragment>
             )}
           />
           <Redirect to="/" />
         </Switch>
       </div>
-      <Button handleClick={handleClick} open={open} setOpen={setOpen}/>
-      <Message open={open} setOpen={setOpen}/>
+      {/* <Button handleClick={handleClick} open={open} setOpen={setOpen}/>
+      <Message open={open} setOpen={setOpen}/> */}
 
     </Router>
   )
