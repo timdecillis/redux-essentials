@@ -34,8 +34,8 @@ function App() {
           <Redirect to="/" />
         </Switch>
       </div>
-      <Button handleClick={handleClick} open={open} setOpen={setOpen}/>
-      <Message open={open} setOpen={setOpen}/>
+      {/* <Button handleClick={handleClick} open={open} setOpen={setOpen}/>
+      <Message open={open} setOpen={setOpen}/> */}
 
     </Router>
   )
