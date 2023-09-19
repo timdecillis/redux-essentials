@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import { Navbar } from './app/Navbar'
+import Button from './components/Button';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Redirect to="/" />
         </Switch>
       </div>
+      <Button/>
     </Router>
   )
 }
