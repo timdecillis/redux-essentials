@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button() {
+function Button({open, setOpen, handleClick}) {
   return (
-    <button>
-      Push Me
+    <button onClick={handleClick}>
+      {open ? 'Close' : 'Push Me'}
     </button>
   )
 }

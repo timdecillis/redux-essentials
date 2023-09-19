@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,8 +8,15 @@ import {
 
 import { Navbar } from './app/Navbar'
 import Button from './components/Button';
+import Message from './components/Message';
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open)
+  }
+
   return (
     <Router>
       <Navbar />
@@ -27,7 +34,9 @@ function App() {
           <Redirect to="/" />
         </Switch>
       </div>
-      <Button/>
+      <Button handleClick={handleClick} open={open} setOpen={setOpen}/>
+      <Message open={open} setOpen={setOpen}/>
+
     </Router>
   )
 }
