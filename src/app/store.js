@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import postsReducer from '../features/postspostsSlice';
+import postsReducer from '../features/postsSlice';
 
 export default configureStore({
   reducer: {
