@@ -23,8 +23,8 @@ export const AddPostForm = () => {
         <textarea
           id="postContent"
           name="postContent"
-          value={title}
-          onChange={onTitleChanged}
+          value={content}
+          onChange={onContentChanged}
         />
         <button type="button">Save Post</button>
       </form>
