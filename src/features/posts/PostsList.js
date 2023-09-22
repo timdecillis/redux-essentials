@@ -15,8 +15,10 @@ export const PostsList = () => {
     </article>
   ))
 
-  return <section className="posts-list">
-    <h2>Posts</h2>
-    {renderedPosts}
-  </section>
+  return (
+    <section className="posts-list">
+      <h2>Posts</h2>
+      {renderedPosts}
+    </section>
+  )
 }
