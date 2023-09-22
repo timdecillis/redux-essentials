@@ -30,7 +30,7 @@ export const EditPostForm = ({ match }) => {
     <section>
       <h2>Edit Post</h2>
       <form>
-        <label hemlFor="postTitle">Post Title:</label>
+        <label htmlFor="postTitle">Post Title:</label>
         <input
           type="text"
           id="postTitle"
