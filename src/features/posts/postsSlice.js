@@ -14,7 +14,7 @@ const postsSlice = createSlice({
       const { postId, reaction } = action.payload
       const existingPost = state.find(post => post.id === postId)
       if (existingPost) {
-        existingPost.reaction[reaction] ++
+        existingPost.reactions[reaction]++
       }
     },
     postAdded: {
@@ -44,6 +44,6 @@ const postsSlice = createSlice({
   }
 })
 
-export const { postAdded, postUpdated } = postsSlice.actions;
+export const { postAdded, postUpdated, reactionAdded } = postsSlice.actions;
 
 export default postsSlice.reducer;
