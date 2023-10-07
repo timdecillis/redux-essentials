@@ -59,6 +59,8 @@ const postsSlice = createSlice({
   }
 })
 
+// adding comment
+
 export const { postAdded, postUpdated, reactionAdded } = postsSlice.actions;
 
 export default postsSlice.reducer;
